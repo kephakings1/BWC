@@ -1,5 +1,5 @@
 {
-  "name": "NEXUS-AI",
+  "name": "BWC",
   "version": "2.0.0",
   "description": "WhatsApp Multi Device Bot",
   "main": "pkdriller.js",
@@ -17,7 +17,7 @@
     "bot-md",
     "whatsapp-multi-device"
   ],
-  "author": "NEXUS-AI",
+  "author": "KINGS",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
