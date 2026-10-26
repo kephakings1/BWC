@@ -54,7 +54,7 @@ zokou({
 zokou({
   'nomCom': "repo",
   'categorie': "General-Fredi",
-  'reaction': '🫧',
+  'reaction': '💚',
   'nomFichier': __filename
 }, async (_0x1e08fe, _0x16c249, _0x544c94) => {
   const {
