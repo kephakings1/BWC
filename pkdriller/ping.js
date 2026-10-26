@@ -18,7 +18,7 @@ zokou({ nomCom: "pong", categorie: "General" }, async (dest, zk, commandeOptions
     const date = moment().format("DD/MM/YYYY");
     const uptime = os.uptime();
 
-    let msg = `╭─❏ *📡 AURA-BXMD PING*\n` +
+    let msg = `╭─❏ *📡 BWC PING*\n` +
               `│\n` +
               `│ @ Response: *${ping}ms*\n` +
               `│ @ Date: *${date}*\n` +
@@ -34,11 +34,11 @@ zokou({ nomCom: "pong", categorie: "General" }, async (dest, zk, commandeOptions
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: "120363419969992177@newsletter",
-          newsletterName: "AURA-BXMD",
+          newsletterName: "BWC",
           serverMessageId: 143
         },
         externalAdReply: {
-          title: "⚡ AURA-BXMD SYSTEM STATUS",
+          title: "⚡ BWC SYSTEM STATUS",
           body: "Bot is running smoothly 🚀",
           thumbnailUrl: conf.LOGO, // use your logo in set.js
           sourceUrl: conf.GURL,
