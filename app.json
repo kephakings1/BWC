@@ -1,9 +1,9 @@
 {
-  "name":"AURA-BXMD",
-  "description":"Best whatsapp bot💥 developed by sir bravin ☠️",
+  "name":"BWC",
+  "description":"Best whatsapp bot💥 developed by KINGS",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://files.catbox.moe/iad1ju.png",
-  "repository":"https://github.com/sir-bravin111/AURA-BXMD",
+  "logo":"https://files.brevo.host/f/jj25m08sf7.jpg",
+  "repository":"https://github.com/kephakings1/BWC",
   "succes_url":"/",
   "stack":"heroku-24",
   "env":{
