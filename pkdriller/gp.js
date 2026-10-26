@@ -1,0 +1,94 @@
+const { zokou } = require("../framework/zokou");
+const axios = require("axios");
+
+zokou(
+{
+nomCom: "ai",
+aliases: ["gpt","openai","chatgpt"],
+categorie: "AI",
+reaction: "🤖"
+},
+async (jid, sock, data)=>{
+
+const { arg, ms } = data;
+
+const repondre = async(text)=>{
+return sock.sendMessage(
+jid,
+{
+text,
+contextInfo:{
+forwardingScore:999,
+isForwarded:true,
+forwardedNewsletterMessageInfo:{
+newsletterJid:"120363419969992177@newsletter",
+newsletterName:"AURA-BXMD",
+serverMessageId:143
+},
+externalAdReply:{
+title:"🤖 AURA-BXMD ASSISTANT",
+body:"Smart AI System",
+thumbnailUrl:"https://files.catbox.moe/wvyd3v.jpg",
+sourceUrl:"https://aurabxmd.vercel.app/",
+mediaType:1,
+renderLargerThumbnail:false
+}
+}
+},
+{quoted:ms}
+);
+};
+
+if(!arg[0]) return repondre("❌ Please ask a question.");
+
+const question = arg.join(" ");
+
+try{
+
+await repondre("🤖 Thinking...");
+
+const api = `https://bmb-api.zone.id/api/chatgpt?text=${encodeURIComponent(question)}&prompt=You+are+a+very+polite+and+intelligent+AI`;
+
+const res = await axios.get(api);
+
+if(!res.data.status) return repondre("❌ AI failed to respond.");
+
+const answer = res.data.result;
+
+await sock.sendMessage(
+jid,
+{
+text:`🤖 *AURA-BXMD RESPONSE*
+
+${answer}`,
+contextInfo:{
+forwardingScore:999,
+isForwarded:true,
+forwardedNewsletterMessageInfo:{
+newsletterJid:"120363419969992177@newsletter",
+newsletterName:"NEXUS-AI",
+serverMessageId:143
+},
+externalAdReply:{
+title:"AURA-BXMD CHAT",
+body:"Ask anything",
+thumbnailUrl:"https://files.catbox.moe/vsp16g.jpg",
+sourceUrl:"https://aurabxmd.vercel.app/",
+mediaType:1,
+renderLargerThumbnail:false
+}
+}
+},
+{quoted:ms}
+);
+
+}catch(err){
+
+console.log("AI Error:",err);
+
+repondre("❌ AI request failed.");
+
+}
+
+}
+);
