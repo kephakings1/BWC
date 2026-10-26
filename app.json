@@ -58,14 +58,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"AURA-BXMD",
+      "value":"BWC",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://files.catbox.moe/iad1ju.png",
+      "value":"https://files.brevo.host/f/jj25m08sf7.jpg",
       "required":false
        
      },
@@ -97,14 +97,14 @@
     
     "desc": "Your name",
     "required": false,
-    "value": "AURA-BXMD"
+    "value": "BWC"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of kenya '254')",
     "required":true,
-    "value": "97455320902"
+    "value": "254718858563"
   },
     "WARN_COUNT":
   {
