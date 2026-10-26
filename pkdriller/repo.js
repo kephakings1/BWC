@@ -65,10 +65,10 @@ zokou({
     const _0x273ae5 = await axios.get("https://api.github.com/repos/sir-bravin111/World-wide/fork");
     const _0x540861 = _0x273ae5.data;
     const _0x5abda2 = moment(_0x540861.updated_at).format("DD/MM/YYYY");
-    const _0xb0dc07 = "\nThis is\n\n> AURA-BXMD XMD\n\n*Don't forget fork and star repo*\n\n> *sᴛᴀʀs:* " + _0x540861.stargazers_count + "\n> *Forks:* " + _0x540861.forks_count + "\n> *Watchera:* " + _0x540861.watchers + "\n> *Updated:* " + _0x5abda2 + "\n> *Repo Link:*" + _0x540861.html_url + "*\n\n®";
+    const _0xb0dc07 = "\nThis is\n\n> BWC\n\n*Don't forget fork and star repo*\n\n> *sᴛᴀʀs:* " + _0x540861.stargazers_count + "\n> *Forks:* " + _0x540861.forks_count + "\n> *Watchera:* " + _0x540861.watchers + "\n> *Updated:* " + _0x5abda2 + "\n> *Repo Link:*" + _0x540861.html_url + "*\n\n®";
     await _0x16c249.sendMessage(_0x1e08fe, {
       'image': {
-        'url': "https://files.catbox.moe/a4q16k.jpg"
+        'url': "https://files.brevo.host/f/jj25m08sf7.jpg"
       },
       'caption': _0xb0dc07,
       'contextInfo': {
@@ -80,7 +80,7 @@ zokou({
         },
         'forwardingScore': 0x3e7,
         'externalAdReply': {
-          'title': "AURA-BXMD-XMD",
+          'title': "BWC",
           'body': "💖repo link request 💖",
           'thumbnailUrl': "https://files.catbox.moe/a4q16k.jpg",
           'mediaType': 0x1,
@@ -95,12 +95,12 @@ zokou({
       },
       'mimetype': "audio/mp4",
       'ptt': true,
-      'caption': "*🩸 AURA-BXMD repo song 🩸",
+      'caption': "*🩸 BWC repo song 🩸",
       'contextInfo': {
         'isForwarded': true,
         'forwardedNewsletterMessageInfo': {
           'newsletterJid': "120363419969992177@newsletter",
-          'newsletterName': "sir bravin",
+          'newsletterName': "KINGS",
           'serverMessageId': -1
         }
       }
