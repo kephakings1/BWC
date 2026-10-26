@@ -1,8 +1,8 @@
-<h1 align="center"> AURA-BXMD </h1>
+<h1 align="center"> BWC </h1>
 
 <p align="center">
   <a href="https://github.com/sir-bravin111/AURA-BXMD">
-    <img alt="AURA-BXMD docs" height="350" src="https://files.catbox.moe/8gw009.png">
+    <img alt="BWC docs" height="350" src="https://files.brevo.host/f/jj25m08sf7.jpg">
   </a>
 </p>
 
